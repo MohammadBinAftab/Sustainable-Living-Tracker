@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Carbon Footprint Calculator</title>
+  <link rel="stylesheet" href="diversion.css">
+</head>
+<body>
+  <h1>Carbon Footprint Calculator</h1>
+  <form id="carbon-form">
+    <h2>Transportation</h2>
+    <label for="car-mileage">Vehicle mileage (Kilometres per litre):</label>
+    <input type="number" id="car-mileage" name="car-mileage">
+
+    <h2>Home Energy Usage</h2>
+    <label for="electricity-usage">Electricity usage (kWh per month):</label>
+    <input type="number" id="electricity-usage" name="electricity-usage">
+
+    <h2>Diet</h2>
+    <label for="meat-consumption">Weekly meat consumption (grams):</label>
+    <input type="number" id="meat-consumption" name="meat-consumption">
+
+    <button type="submit" id="calculate-btn" onclick="Calculate()">Calculate</button>
+    <p id = "count2"></p>
+    <h4></h4>
+  </form>
+  <h1>Goal Tracker</h1>
+    <div id="goal-form">
+      <label for="goal-input">Enter your goal:</label>
+      <input type="text" id="goal-input">
+      <button id="submit-btn" onclick="">Submit</button>
+    </div>
+    <div id="goal-display">
+      <h2>Your Goal:</h2>
+      <p id="goal-text"></p>
+      <h2>Your Progress:</h2>
+      <div id="progress-bar">
+       	<div id="progress"></div>
+      </div>
+      <label for="progress-input">Enter your progress:</label>
+      <input type="number" id="progress-input" min="0" max="0" step="1">
+      <button id="update-btn">Update</button>
+    </div>
+  <script src="diversion.js"></script>
+</body>
+</html>
+
+
+
+
+
+
